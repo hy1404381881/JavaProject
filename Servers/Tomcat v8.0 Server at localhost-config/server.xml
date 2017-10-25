@@ -125,7 +125,7 @@
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
       
-      <Context docBase="SpringSessionShared" path="/SpringSessionShared" reloadable="true" source="org.eclipse.jst.jee.server:SpringSessionShared"/>
+      <Context docBase="SpringSessionShared" path="/" reloadable="true" source="org.eclipse.jst.jee.server:SpringSessionShared"/>
       </Host>
     </Engine>
   </Service>
