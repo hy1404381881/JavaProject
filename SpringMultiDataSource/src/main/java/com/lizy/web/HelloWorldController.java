@@ -1,0 +1,38 @@
+package com.lizy.web;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.session.Session;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+@Controller
+public class HelloWorldController {
+	@Autowired
+	private HttpServletRequest request;
+
+	@GetMapping("/hello")
+	@ResponseBody
+	public String testHello() {
+		String sessionId = request.getSession().getId();
+		return sessionId + ":bbbb";
+	}
+
+	@GetMapping("/setsession")
+	@ResponseBody
+	public String setSession(HttpSession session, String name) {
+		session.setAttribute("name", name);
+		return "程序B:" + session.getId();
+	}
+
+	@GetMapping(value = "/getsession")
+	@ResponseBody
+	public String getSession(HttpSession session) {
+		return session.getAttribute("name").toString() + "-----" + "程序B:" + "sessionId:" + session.getId();
+	}
+
+}

@@ -1,0 +1,12 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+	<!-- 接口的具体实现类 -->
+	<!-- <bean id="loginTestInterfa" class="com.cn.wddqz.manage.impl.LoginTestImpl" /> -->
+	<!-- 使用Spring的HessianServie做代理 -->
+	<bean name="/loginTestInterfa"	class="org.springframework.remoting.caucho.HessianServiceExporter">
+		<!-- service引用具体的实现实体Bean-->
+		<property name="service" ref="loginTestInterfa" />
+		<property name="serviceInterface" value="com.cn.wddqz.manage.LoginTestInterfa" />
+	</bean>
+
+</beans>

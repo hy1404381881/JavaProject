@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <display-name></display-name>	
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>
+        	classpath*:context.xml
+        </param-value>
+	</context-param>
+	<!-- Start 配置上下文载入器 -->
+	<!-- 上下文载入器载入除DispatcherServlet载入的配置文件之外的其它上下文配置文件 -->
+	<servlet>
+		<servlet-name>spring</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<!-- 可以自定义servlet.xml配置文件的位置和名称，默认为WEB-INF目录下，名称为[<servlet-name>]-servlet.xml，如spring-servlet.xml 
+			<init-param> <param-name>contextConfigLocation</param-name> <param-value>/WEB-INF/spring-servlet.xml</param-value>&nbsp; 
+			默认 </init-param> -->
+		<init-param>
+			<param-name>contextConfigLocation</param-name>
+			<param-value>classpath*:spring-servlet.xml</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>spring</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+	
+	<!-- 最常用的上下文载入器是一个Servlet监听器，其名称为ContextLoaderListener -->
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+	<!-- End 配置上下文载入器 -->
+</web-app>

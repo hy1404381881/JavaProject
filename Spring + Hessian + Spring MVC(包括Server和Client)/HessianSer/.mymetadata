@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="HessianSer"
+  id="myeclipse.1466475577314"
+  context-root="/HessianSer"
+  j2ee-spec="6.0"
+  archive="HessianSer.war">
+  <attributes>
+    <attribute name="webrootdir" value="src/main/webapp" />
+  </attributes>
+</project-module>
+

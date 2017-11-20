@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workingSetManager>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1511148439813_7" label="spring-mvc-rest-exhandler-root" name="spring-mvc-rest-exhandler-root">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/spring-mvc-rest-exhandler" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/spring-mvc-rest-exhandler-example" type="4"/>
+</workingSet>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1508737967198_0" label="Window Working Set" name="Aggregate for window 1508737967197"/>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1508738841974_1" label="Window Working Set" name="Aggregate for window 1508738841974"/>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1508743573019_2" label="Window Working Set" name="Aggregate for window 1508743573019"/>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1508832258546_3" label="Window Working Set" name="Aggregate for window 1508832258546"/>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1508911591272_4" label="Window Working Set" name="Aggregate for window 1508911591272"/>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1508985537091_5" label="Window Working Set" name="Aggregate for window 1508985537091"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1508989654750_6" label="Window Working Set" name="Aggregate for window 1508989654750"/>
 </workingSetManager>
