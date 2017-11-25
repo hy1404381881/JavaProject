@@ -1,0 +1,4 @@
+该项目主要用于测试Java中的注解和数据验证
+//参考网址
+http://www.importnew.com/10294.html
+http://www.xdemo.org/java-annotation-validate/
