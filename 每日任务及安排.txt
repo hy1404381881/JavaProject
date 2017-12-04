@@ -2,3 +2,4 @@
 1、多线程练习 项目名称：ConcurrentTest
 2、redis学习  项目名称：RedisStudy
 3、JAVA并发编程实战 书籍阅读及编码实践 项目名称：Java并发编程实战
+4、java并发编程的艺术 书籍阅读及编码实践 项目名称：Java并发编程的艺术
