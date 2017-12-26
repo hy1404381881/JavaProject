@@ -1,3 +1,4 @@
 参考网址：http://blog.csdn.net/column/details/17790.html
-学习进度：http://blog.csdn.net/xlgen157387/article/details/78005352
+学习进度：http://blog.csdn.net/xlgen157387/article/details/78253096
+线程状态参考：https://www.cnblogs.com/lwbqqyumidi/p/3804883.html
 

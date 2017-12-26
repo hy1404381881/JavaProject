@@ -1,7 +1,7 @@
 package Test4;
 
 public class ThreadB extends Thread {
-	private  MyList list;
+	private   MyList list;
 
 	public ThreadB(MyList list) {
 		super();
